@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(68, 147, 221);
+}
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+#root{
+    display: none;
+}

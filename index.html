@@ -5,9 +5,31 @@
         <title>Idade - Página Interativa</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Heberth Alexandre">
-        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-
+        <div class="container">
+            <header>
+                <h1>Inserção de Idade</h1>
+            </header>
+            <section>
+                <div>
+                    <form action="#">
+                        <div>
+                            <input type="number" onchange="mudaIdade()">
+                        </div>
+                        <div>
+                            <input type="radio" name="sexo" id="masculino">
+                            <label for="masculino">Masculino</label> 
+                            <input type="radio" name="sexo" id="feminino">
+                            <label for="feminino">Feminino</label>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer>&copy Copyright Heberth Alexandre</footer>
+        </div>
+        <div id="root"></div>
+        <script src="js/index.js"></script>
     </body>
 </html>
