@@ -10,26 +10,25 @@
     <body>
         <div class="container">
             <header>
-                <h1>Inserção de Idade</h1>
+                <h1>Verificador de Idade</h1>
             </header>
-            <section>
-                <div>
-                    <form action="#">
-                        <div>
-                            <input type="number" onchange="mudaIdade()">
-                        </div>
-                        <div>
-                            <input type="radio" name="sexo" id="masculino">
-                            <label for="masculino">Masculino</label> 
-                            <input type="radio" name="sexo" id="feminino">
-                            <label for="feminino">Feminino</label>
-                        </div>
-                    </form>
-                </div>
+            <section id="secao-informacoes">
+                <form action="#" method="POST">
+                        <label for="idade">Ano de Nascimento: </label>
+                        <input type="number" name="ano" id="ano"/><br/>
+                        <div id="x"></div>
+                        <label for="sexo">Sexo: </label>
+                        <input type="radio" name="sexo" id="masculino"/>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="sexo" id="feminino" value="feminino">
+                        <label for="feminino">Feminino</label><br/>
+                        <input type="button" value="Verificar" onclick="resultado()">
+                </form>
+                <p id="res">Preencha os campos acima para ver o resultado!</p>
+                <div id="foto"></div>
             </section>
-            <footer>&copy Copyright Heberth Alexandre</footer>
+            <footer>&copy; Copyright Heberth Alexandre</footer>
         </div>
-        <div id="root"></div>
         <script src="js/index.js"></script>
     </body>
 </html>
